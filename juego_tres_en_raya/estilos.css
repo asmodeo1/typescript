@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+header {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+}
+
+main header div {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#titulo {
+    font-size: 2rem;
+}
+#partida {
+    width:fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 200px));    
+}
+.casilla {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 3px solid black;
+    aspect-ratio: 1;
+    font-size: 7rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: bisque;
+
+}
+#resultado {
+    display: none;
+    position: absolute;
+    background-color: black;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 2rem;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+#resultado h1 {
+    color: red;
+}
+
+#cerrar, #nueva, #reiniciar {
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color: rgb(57, 184, 238);
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+#reiniciar {
+    background-color: rgb(237, 98, 98);
+    color: white;
+}
+
+#cerrar:hover, #nueva:hover, #reiniciar:hover {
+    outline: solid red 3px;
+}
+
+@keyframes victoria {
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #partida {
+        grid-template-columns: repeat(3, minmax(50px, 100px));    
+    }
+    .casilla {
+        font-size: 4rem;
+    }
+    #resultado {
+        font-size: 1.2rem;
+        width: 80%;
+    }
+}

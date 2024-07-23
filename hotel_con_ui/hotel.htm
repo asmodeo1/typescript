@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Fuente Montserrat: https://fonts.google.com/
+     
+     -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <script type="module" src="js/hotelUI.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Reservas hoteleras</h1>
+        <section id="informacion">
+            <div>Habitaciones ocupadas: <span id="habitacionesOcupadas">0</span></div>
+            <div>Habitaciones libres: <span id="habitacionesLibres">0</span></div>
+            <div>% ocupación: <span id="porcentajeOcupacion">0</span>%</div>
+        </section>
+    </header>
+    <main>
+        <section id="habitaciones">
+        </section>
+    </main>
+
+    <section id="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required placeholder="Introduce el nombre" minlength="5">
+        <label for="fechaEntrada">Entrada:</label>
+        <input type="date" id="fechaEntrada" required>
+        <label for="fechaSalida">Salida:</label>
+        <input type="date" id="fechaSalida" required>
+        <div class="botonesReserva">
+            <input type="button" value="Aceptar" id="aceptarReserva" class="botonAceptar">
+            <input type="button" value="Cancelar" id="cerrarVentanaReserva" class="botonCancelar">
+        </div>
+        <div id="errores"></div>
+    </section>
+
+    
+</body>
+</html>

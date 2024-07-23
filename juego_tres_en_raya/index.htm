@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego tres en raya</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="juego.js" defer></script>
+</head>
+<body>
+    <header id="titulo"><h1>Tres en raya</h1></header>
+    <main>
+        <header>
+            <div>Juegan: <span id="juegan"></span>
+                <input type="button" value="nueva" id="nueva">
+                <div>Victorias X: <span id="victoriasX">0</span></div>
+                <div>Victorias O: <span id="victoriasO">0</span></div>
+                <input type="button" value="reiniciar" id="reiniciar">
+            </div>
+        </header>
+        <section id="partida">
+            <div id="c1" class="casilla"></div>
+            <div id="c2" class="casilla"></div>
+            <div id="c3" class="casilla"></div>
+            <div id="c4" class="casilla"></div>
+            <div id="c5" class="casilla"></div>
+            <div id="c6" class="casilla"></div>
+            <div id="c7" class="casilla"></div>
+            <div id="c8" class="casilla"></div>
+            <div id="c9" class="casilla"></div>
+        </section>
+    </main>
+    <div id="resultado">
+        <h2>Final de partida</h2>
+        <p></p>
+        <input type="button" value="cerrar" id="cerrar">
+    </div>
+</body>
+</html>
